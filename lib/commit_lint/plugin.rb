@@ -79,7 +79,7 @@ module Danger
     end
 
     def failed_shas(klass)
-      messages.map { |message| message[:sha] if klass.fail? message }.compact.map { |sha| short_hashes ? sha[0..6]) : sha }
+      messages.map { |message| message[:sha] if klass.fail? message }.compact.map { |sha| short_hashes ? sha[0..6] : sha }
     end
 
     def checkers
