@@ -127,7 +127,7 @@ module Danger
     end
 
     def short_hashes
-      @config[:short_hashes] || false
+      @config[:short_hashes] || true
     end
 
     def messages
