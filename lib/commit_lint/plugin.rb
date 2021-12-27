@@ -148,12 +148,12 @@ module Danger
     end
 
     def issue_warning(message, shas)
-      warning = ([message] + shas).join("\n")
+      warning = ([message] + shas).join("<br/>")
       messaging.warn warning
     end
 
     def issue_failure(message, shas)
-      failure = ([message] + shas).join("\n")
+      failure = ([message] + shas).join("<br/>")
       messaging.fail failure
     end
   end
